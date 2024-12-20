@@ -1,0 +1,33 @@
+ion-content {
+    --background: #1b2439;
+  }
+ 
+ ion-item {
+   margin: 20px 16px;
+   --background: #1e293b;
+   --border-radius: 16px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+   
+   ion-select {
+     --placeholder-color: #94a3b8;
+     font-weight: 500;
+     
+     &::part(icon) {
+       color: var(--ion-color-primary);
+     }
+   }
+ }
+
+ion-header {
+ ion-toolbar {
+   --background: #1e293b;
+   
+   ion-title {
+     font-weight: 700;
+     font-size: 1.3rem;
+     color: #f1f5f9;
+     letter-spacing: 0.5px;
+   }
+ }
+}
+ 

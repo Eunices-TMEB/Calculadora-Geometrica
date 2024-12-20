@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculadora Geometrica
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-select label="Seleccione una figura" [(ngModel)]="figuraSeleccionada">
+      <ion-select-option value="circulo">Circulo</ion-select-option>
+      <ion-select-option value="triangulo">Triangulo</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <app-circulo *ngIf="figuraSeleccionada === 'circulo'"></app-circulo>
+  <app-triangulo *ngIf="figuraSeleccionada === 'triangulo'"></app-triangulo>
+</ion-content>
